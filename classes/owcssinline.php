@@ -27,7 +27,9 @@
 class owCssInline {
 
 	public function css_inline( $content, $dir_css ) {
-	
+		
+		$owSimpleDom = new owSimpleDom();
+		
 		if ( is_file($dir_css) && is_readable($dir_css) ) {
 			
 			$html = str_get_html($content);

@@ -40,7 +40,7 @@ class owSimpleDomOperators
 		return array( 																  
 						'css_inline' => array( 'css_file' => array( 'type' => 'string',
                                                                   'required' => true,
-                                                                  'default' => '' ) 
+                                                                  'default' => '' ) )
 						
 				  );
     }
@@ -57,7 +57,7 @@ class owSimpleDomOperators
             
 			case 'css_inline':
 				$owCssInline = new owCssInline();
-				$operatorValue = $owCssInline->css_inline( $operatorValue, $namedParameters['css_inline'] );
+				$operatorValue = $owCssInline->css_inline( $operatorValue, eZSys::rootDir().$namedParameters['css_file'] );
 			break;
 			
 			
