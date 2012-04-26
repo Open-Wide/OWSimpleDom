@@ -29,3 +29,4 @@ Bonus operators
 		<div class="example"><p>Content</p></div>
 	{/set-block}
 	{$html|css_inline('stylesheets/style.css'|ezdesign(no))}
+
