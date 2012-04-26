@@ -8,10 +8,11 @@ Usage
  1. You need to declare a new owSimpleDom object
  2. You can use SimpleHTMLDom functions
 
-Exemple
+Example
 -----------------------------
- $owSimpleDom = new owSimpleDom();
- $html_dom = str_get_html( $html );
+
+	$owSimpleDom = new owSimpleDom();
+	$html_dom = str_get_html( $html );
  
 
 About SimpleHTMLDom
