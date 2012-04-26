@@ -22,4 +22,4 @@ Online documentation of SimpleHTMLDom :  http://simplehtmldom.sourceforge.net/ma
 Bonus operators
 -----------------------------
  * css_inline : provides a simple css inliner for your mailing.
- This only supports declaration order of selectors (for example, #ids are as important as .classes)
+ Warning : It doesn't support css selector priority (for example, #ids are as important as .classes. You need declare css rules in apply order.)
