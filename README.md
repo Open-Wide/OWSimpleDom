@@ -21,9 +21,9 @@ Online documentation of SimpleHTMLDom :  http://simplehtmldom.sourceforge.net/ma
 
 Bonus operators
 -----------------------------
- *css_inline*
- It provides a simple css inliner for your mailing.
- Warning : It doesn't support css selector priority (for example, #ids are as important as .classes. You need to declare css rules in apply order.)
+*css_inline*
+It provides a simple css inliner for your mailing.
+Warning : It doesn't support css selector priority (for example, #ids are as important as .classes. You need to declare css rules in apply order.)
 
 	{set-block variable=$html}
 		<h3>Title</h3>
