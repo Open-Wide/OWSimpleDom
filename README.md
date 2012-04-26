@@ -24,7 +24,7 @@ Bonus operators
 
 ### css_inline ###
 It provides a simple css inliner for your mailing.
-Warning : It doesn't support css selector priority (for example, #ids are as important as .classes. You need to declare css rules in apply order.)
+*Warning* : It doesn't support css selector priority (for example : "#id .class" won't override ".class". You need to declare CSS rules in the order you want them applied)
 
 	{set-block variable=$html}
 		<h3>Title</h3>
