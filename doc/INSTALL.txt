@@ -1,0 +1,60 @@
+-------------------------
+owSimpleDom :
+	v 1.0
+-------------------------
+
+-------------------------
+Installation instructions
+-------------------------
+
+1) If it does not exist, create a directory named "extension" in the base ezpublish directory.
+
+
+2) Unpack the ZIP file and copy the directory "owsimpledom" to the extension directory.
+
+
+
+3) Activate extension :
+---------------------------------
+Add the following to your settings/override/site.ini.append.php file:
+[ExtensionSettings]
+ActiveExtensions[]=owsimpledom
+
+	OR
+
+In administrator user interface, click 'setup' tab->'extensions' menu, select 'owlanguageredirect', click button 'Apply Changes'
+
+
+
+4) Regenerate autoloads :
+---------------------------------
+In administrator user interface, click 'setup' tab->'extensions' menu, click button 'Regenerate autoload arrays for extensions'
+
+	OR
+	
+in eZ Publish installation folder, run "php bin/php/ezpgenerateautoloads.php -e"
+
+
+
+5) Clear cache
+---------------------------------
+Clear INI and template caches. (from admin 'Setup' tab or commandline)
+
+
+
+-------------------------
+Usage
+-------------------------
+
+ - Now you can use simple PHP DOM library : http://simplehtmldom.sourceforge.net/manual.htm
+ - You can use bonus operators from this extension, see README.md for details
+
+
+
+Hope you find it useful! 
+
+Simon Boyer
+
+--------------------------------------------------
+The mandatory disclaimer: use at your own risk!
+--------------------------------------------------
