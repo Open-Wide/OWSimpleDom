@@ -22,7 +22,7 @@ Online documentation of SimpleHTMLDom :  http://simplehtmldom.sourceforge.net/ma
 Bonus operators
 -----------------------------
 
-**css_inline**
+### css_inline ###
 
 It provides a simple css inliner for your mailing.
 
