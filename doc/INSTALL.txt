@@ -22,7 +22,7 @@ ActiveExtensions[]=owsimpledom
 
 	OR
 
-In administrator user interface, click 'setup' tab->'extensions' menu, select 'owlanguageredirect', click button 'Apply Changes'
+In administrator user interface, click 'setup' tab->'extensions' menu, select 'owsimpledom', click button 'Apply Changes'
 
 
 

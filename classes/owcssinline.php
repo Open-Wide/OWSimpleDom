@@ -116,7 +116,7 @@ class owCssInline {
 				}
 			}
 			
-			return $html;
+			return $html->outertext;
 			
 		}
 		
