@@ -57,7 +57,7 @@ class owCssInline {
 							$args = trim($args);
 							
 							if ( $selector!='' && $args!='' && $selector!='\0' && $args!='\0' ) {
-								
+
 								// Get matched elements from DOM
 								$matches = $html->find($selector);
 								
@@ -78,8 +78,10 @@ class owCssInline {
 										// Store each old css rule from html
 										foreach( $old_styles_array as $old_rule ) {
 											$old = explode(':', $old_rule);
-											if( count($old) > 1) {
+											if( count($old) > 1 ) {
 												$old_rules_array[trim($old[0])] = trim($old[1]);
+												for( $i=2; $i<count($old); $i++)
+													$old_rules_array[trim($old[0])] .= ':'.trim($old[$i]);
 											}
 										}
 										
@@ -88,6 +90,8 @@ class owCssInline {
 											$new = explode(':', $new_rule);
 											if( count($new) > 1) {
 												$new_rules_array[trim($new[0])] = trim($new[1]);
+												for( $i=2; $i<count($new); $i++)
+													$new_rules_array[trim($new[0])] .= ':'.trim($new[$i]);
 											}
 										}
 										
