@@ -26,13 +26,13 @@
 
 class owCssInline {
 
-	public function css_inline( $content, $dir_css ) {
+	public function css_inline( $content, $dir_css, $stripRN = true ) {
 		
 		$owSimpleDom = new owSimpleDom();
 		
 		if ( is_file($dir_css) && is_readable($dir_css) ) {
 			
-			$html = str_get_html($content);
+      $html = str_get_html($content, true, true, DEFAULT_TARGET_CHARSET, $stripRN);
 			
 			if ($html) {
 				$css = file_get_contents($dir_css);
